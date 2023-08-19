@@ -12,6 +12,8 @@ public void ingresar(Propietario propietario);
 	public void borrar(Integer id);
 	
 	public List<Propietario> buscarTodo();
+	public Propietario seleccionarPorId(Integer id);
+
 	
 
 }

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html xmls:th="http://www.thymeleaf.org">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+
+<body>
+	<table>
+		<tr>
+			<td><label>ID:</label></td>
+			<td><input type="text" th:fields="${propietario.id}"></td>
+		</tr>
+		<tr>
+			<td><label>Nombre:</label></td>
+			<td><input type="text" th:fields="${propietario.nombre}"></td>
+		</tr>
+		<tr>
+			<td><label>Apellido:</label></td>
+			<td><input type="text" th:fields="${propietario.apellido}"></td>
+		</tr>
+		<tr>
+			<td><label>Cédula:</label></td>
+			<td><input type="text" th:fields="${propietario.cedula}"></td>
+		</tr>
+	</table>
+</body>
+	</html>

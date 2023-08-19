@@ -1,12 +1,33 @@
-//version de html que es la numero 5
 <!DOCTYPE html>
-<html lang="en">
+<html xmls:th="http://www.thymeleaf.org">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	
 </head>
+
 <body>
-    <h1>Hola Mundo </h1>>
+	<h1>Hola Mundo </h1>
+	<table class="table table-success table-striped">
+		<thead>
+			<tr>
+				<th>ID</th>
+				<th>Nombre</th>
+				<th>Apellido</th>
+				<th>Cédula</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr th:each="propietario:${propietarios}">
+				<td th:text="${propietario.id}"></td>
+				<td th:text="${propietario.nombre}"></td>
+				<td th:text="${propietario.apellido}"></td>
+				<td th:text="${propietario.cedula}"></td>
+			</tr>
+		</tbody>
+	</table>
 </body>
+
 </html>

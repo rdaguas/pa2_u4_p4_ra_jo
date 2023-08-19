@@ -23,7 +23,7 @@ public class Pa2U4P4RaJoApplication implements CommandLineRunner {
 		// TODO Auto-generated method stub
 		
 		
-		//http://localhost:8080/concesionario/propietarios/buscar
+		//http://localhost:8080/concensionario/propietarios/buscar
 		Propietario prop = new Propietario();
 		prop.setNombre("Juan");
 		prop.setApellido("Angulo");

@@ -37,9 +37,17 @@ public class PropietarioServiceImpl implements IPropietarioService {
 	}
 
 	@Override
+	@Transactional(value = TxType.REQUIRES_NEW)
 	public List<Propietario> buscarTodo() {
 		// TODO Auto-generated method stub
 		return this.propietarioRepository.buscarTodo();
+	}
+
+	@Override
+	@Transactional(value = TxType.REQUIRES_NEW)
+	public Propietario seleccionarPorId(Integer id) {
+		// TODO Auto-generated method stub
+		return this.propietarioRepository.seleccionarPorId(id);
 	}
 
 }
